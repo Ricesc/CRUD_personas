@@ -1,4 +1,5 @@
 <?php 
+error_reporting(E_ALL ^ E_NOTICE);
 $servidor="localhost";
 $usuario="dw2_user";
 $password="dw2_user";
