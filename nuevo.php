@@ -82,7 +82,7 @@ if ($_GET and isset($_GET['id']))
                             ?>
                             <button type="submit" class="btn btn-warning">Enviar</button>
                             <?php } ?>
-                            <a href="index.php" id="my-link" class="btn btn-primary">Volver</a> 
+                            <a href="index.php" class="btn btn-primary">Volver</a> 
                         </div>
                     
                 </form>

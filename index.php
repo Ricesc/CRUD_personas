@@ -16,9 +16,26 @@ $datos=traerPersonas($conn);
 
 </head>
 <body>
-    <h1 align="center"">Personas</h1>
+    <h1 align="center">Personas</h1>
     <div class="container table-responsive shadow-lg p-3 mb-5 bg-body rounded">
-        <a href="nuevo.php" class="btn btn-primary">Nuevo</a>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <a href="nuevo.php" class="btn btn-primary">Nuevo</a>
+            
+            <div class="search-container">
+                <input type="text" class="form-control" id="searchInput" placeholder="Buscar...">
+                <select class="form-select" id="filterSelect">
+                    <option value="">Filtrar por...</option>
+                    <option value="Columna 1">Id</option>
+                    <option value="Columna 2">Nombre</option>
+                    <option value="Columna 3">Apellido</option>
+                    <option value="Columna 4">Cin</option>
+                    <option value="Columna 5">Direccion</option>
+                    <option value="Columna 6">Fecha Nac.</option>
+                    <option value="Columna 7">Ciudad ID</option>
+                </select>
+            </div>
+        </div>
+
         <table class="table table-hover table-light align-middle text-center tabla-eliminar">
             <thead class="table-dark">
                 <tr>
@@ -57,5 +74,6 @@ $datos=traerPersonas($conn);
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="alerts.js"></script>
+    <script src="buscador.js"></script>
 </body>
 </html>
